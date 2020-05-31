@@ -1,14 +1,12 @@
 package com.company.projectwebdriver.redmine;
 
 import com.company.projectwebdriver.base.BaseTest;
-import com.company.projectwebdriver.pages.HomePage;
+import com.company.projectwebdriver.pages.RedmineHomePage;
 import com.company.projectwebdriver.pages.RedmineLoginPage;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -25,7 +23,7 @@ public class RedmineTest extends BaseTest {
         String expectedUser = "Conectado como jnavarro";
 
         RedmineLoginPage redmineLoginPage = new RedmineLoginPage(driver);
-        HomePage redmineHomePage =  redmineLoginPage.login(username, password);
+        RedmineHomePage redmineHomePage =  redmineLoginPage.login(username, password);
 
         String userActual = redmineHomePage.getUserLogged();
 

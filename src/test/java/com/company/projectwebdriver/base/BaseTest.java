@@ -12,7 +12,7 @@ public class BaseTest {
     public static void setUp(){
         System.setProperty("webdriver.chrome.driver", "resources/drivers/chromedriver.exe");
         driver = new ChromeDriver();
-        //driver.get("http://CESAR-PC:81/redmine");
+
     }
 
     @AfterAll

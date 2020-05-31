@@ -12,10 +12,10 @@ public class RedmineLoginPage extends Page {
         super(driver);
     }
 
-    public HomePage login(String username, String password){
+    public RedmineHomePage login(String username, String password){
         driver.findElement(txtUsername).sendKeys(username);
         driver.findElement(txtPassword).sendKeys(password);
         driver.findElement(btnLogin).click();
-        return new HomePage(driver);
+        return new RedmineHomePage(driver);
     }
 }

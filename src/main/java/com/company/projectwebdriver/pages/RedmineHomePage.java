@@ -3,11 +3,11 @@ package com.company.projectwebdriver.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class HomePage extends Page {
+public class RedmineHomePage extends Page {
 
     private By lblUserLogged = By.id("loggedas");
 
-    public HomePage(WebDriver driver) {
+    public RedmineHomePage(WebDriver driver) {
         super(driver);
     }
 
